@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Wares Catalogue</string>
     <string name="add_button_text">Add</string>
+    <string name="ware_name">Ware Name</string>
+    <string name="ware_description">Ware Description</string>
+    <string name="price">Price</string>
+    <string name="create_ware_button">Create Ware</string>
 </resources>
