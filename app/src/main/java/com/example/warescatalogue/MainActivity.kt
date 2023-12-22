@@ -31,6 +31,17 @@ class MainActivity : AppCompatActivity() {
 
             binding.recyclerView.adapter = WareAdapter().apply {
                 setDataset(wareList)
+
+                setOnDeleteListener {
+                    lifecycleScope.launch {
+                        AppDatabase(this@MainActivity).getWareDao().deleteWare(it)
+
+                        val newWareList = AppDatabase(this@MainActivity).getWareDao().getAllWares()
+                        binding.recyclerView.adapter = WareAdapter().apply {
+                            setDataset(newWareList)
+                        }
+                    }
+                }
             }
         }
     }
