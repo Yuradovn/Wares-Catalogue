@@ -21,9 +21,9 @@ class AdditionActivity : AppCompatActivity() {
     }
 
     private fun addWare() {
-        val name = binding.name.text.toString()
-        val description = binding.description.text.toString()
-        val price = (binding.price.text.toString().toDouble() * 100).roundToInt()
+        val name = binding.createName.text.toString()
+        val description = binding.createDescription.text.toString()
+        val price = (binding.createPrice.text.toString().toDouble() * 100).roundToInt()
 
         lifecycleScope.launch {
             val ware = Ware(name = name, description = description, price = price)

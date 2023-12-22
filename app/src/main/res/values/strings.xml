@@ -5,4 +5,7 @@
     <string name="ware_description">Ware Description</string>
     <string name="price">Price</string>
     <string name="create_ware_button">Create Ware</string>
+    <string name="price_label">Price:</string>
+    <string name="description_label">Description:</string>
+    <string name="name_label">Name:</string>
 </resources>
