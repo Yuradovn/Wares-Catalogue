@@ -9,28 +9,28 @@
     android:layout_margin="16dp">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/create_name"
+        android:id="@+id/edit_name"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="@string/ware_name"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/create_description"
+        android:id="@+id/edit_description"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="@string/ware_description"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/create_price"
+        android:id="@+id/edit_price"
         android:inputType="numberDecimal"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:hint="@string/price"/>
     
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/button_add"
+        android:id="@+id/button_persist"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="@string/create_ware_button"/>
+        tools:text="@string/create_ware_button"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

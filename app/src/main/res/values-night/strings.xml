@@ -9,4 +9,6 @@
     <string name="price_label">Price:</string>
     <string name="description_label">Description:</string>
     <string name="name_label">Name:</string>
+    <string name="update_button_text">Update</string>
+    <string name="currency_sign">$</string>
 </resources>

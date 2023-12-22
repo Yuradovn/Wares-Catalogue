@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 }
+
+                setOnUpdateListener {
+                    val intent = Intent(this@MainActivity, AdditionActivity::class.java)
+                    intent.putExtra("Ware", it)
+                    startActivity(intent)
+                }
             }
         }
     }
